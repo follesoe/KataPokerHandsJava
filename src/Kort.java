@@ -21,4 +21,11 @@ public class Kort {
 		return Integer.parseInt(_verdi);
 	}
 	
+	public int compareTo(Kort k) {
+		int verdi1 = this.hentTallVerdi();
+		int verdi2 = k.hentTallVerdi();
+					
+		return verdi1 - verdi2;
+	}
+	
 }
